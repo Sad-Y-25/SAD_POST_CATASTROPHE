@@ -1,0 +1,26 @@
+# Manipulation de données et calcul
+numpy
+pandas
+scipy
+
+# Vision par ordinateur et Imagerie satellite
+opencv-python
+rasterio
+fiona
+shapely
+
+# Deep Learning (IA)
+torch
+torchvision
+
+# Graphes et Analyse
+networkx
+scikit-learn
+
+# Interaction Cloud (SpaceNet sur AWS)
+boto3
+awscli
+
+# Environnement
+jupyter
+matplotlib
