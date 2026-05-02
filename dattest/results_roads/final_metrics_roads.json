@@ -1,0 +1,7 @@
+{
+    "best_threshold": 0.45,
+    "test_dice_threshold": 0.248997300863266,
+    "test_iou_threshold": 0.142202690243721,
+    "test_road_pixel_ratio_true": 0.017226366326212883,
+    "test_road_pixel_ratio_pred": 0.019333820790052414
+}

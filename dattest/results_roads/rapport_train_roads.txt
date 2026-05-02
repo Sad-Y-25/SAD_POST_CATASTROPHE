@@ -1,0 +1,41 @@
+
+RAPPORT ENTRAÎNEMENT U-NET ROUTES
+
+1. Données utilisées
+- Train initial : 2354 patches
+- Train filtré : 1936 patches
+- Validation : 419 patches
+- Test : 587 patches
+- Taille image : 256 x 256
+- Ratio pixels routes train initial : 0.018306
+- Ratio pixels routes train filtré : 0.022259
+- Ratio pixels routes validation : 0.018086
+- Ratio pixels routes test : 0.017226
+
+2. Modèle
+- Architecture : Light U-Net
+- Loss : BCE + 2 * Dice Loss
+- Optimizer : Adam
+- Learning rate initial : 0.0001
+- Batch size : 4
+- Epochs max : 35
+
+3. Résultats test
+- Meilleur seuil : 0.45
+- Test Dice : 0.2490
+- Test IoU : 0.1422
+- Precision : 0.2354
+- Recall : 0.2642
+- F1-score : 0.2490
+- Accuracy : 0.9725
+
+4. Fichiers sauvegardés
+- Meilleur modèle : ..\dattest\models\unet_roads_best.keras
+- Modèle final : ..\dattest\models\unet_roads_final.keras
+- Historique entraînement : ..\dattest\results_roads\history_roads.csv
+- Métriques finales : ..\dattest\results_roads\final_metrics_roads.json
+
+5. Avis automatique
+
+Le résultat est faible.
+Le modèle peut être utilisé pour continuer le pipeline de démonstration, mais les KPI routiers doivent être interprétés avec prudence.
