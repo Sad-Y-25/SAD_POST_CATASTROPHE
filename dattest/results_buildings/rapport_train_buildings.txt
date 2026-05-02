@@ -1,0 +1,39 @@
+
+RAPPORT ENTRAÎNEMENT U-NET BÂTIMENTS
+
+1. Données utilisées
+- Train : 2354 patches
+- Validation : 419 patches
+- Test : 587 patches
+- Taille image : 256 x 256
+- Ratio pixels bâtiments train : 0.031785
+- Ratio pixels bâtiments validation : 0.019652
+- Ratio pixels bâtiments test : 0.019960
+
+2. Modèle
+- Architecture : U-Net
+- Loss : Binary Cross Entropy + Dice Loss
+- Optimizer : Adam
+- Learning rate initial : 0.0001
+- Batch size : 4
+- Epochs max : 60
+
+3. Résultats test
+- Meilleur seuil : 0.25
+- Test Dice : 0.4260
+- Test IoU : 0.2706
+- Precision : 0.4656
+- Recall : 0.3926
+- F1-score : 0.4260
+- Accuracy : 0.9789
+
+4. Fichiers sauvegardés
+- Meilleur modèle : ..\dattest\models\unet_buildings_best.keras
+- Modèle final : ..\dattest\models\unet_buildings_final.keras
+- Historique entraînement : ..\dattest\results_buildings\history_buildings.csv
+- Métriques finales : ..\dattest\results_buildings\final_metrics_buildings.json
+
+5. Avis automatique
+
+Le résultat est encore faible.
+Il faut probablement augmenter le dataset, vérifier les masques bâtiments et ajuster les hyperparamètres.
